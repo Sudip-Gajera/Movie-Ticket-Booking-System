@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add_cinema</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(to top left, #3ed8ff, #a8f5ff);
+        }
+
+        input {
+            width: 80%;
+            padding: 7px;
+            margin: 10px auto;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        input[type="submit"] {
+            background-color: #3498db;
+            border: none;
+            color: white;
+            cursor: pointer;
+            width: 130px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2977aa;
+        }
+
+        table{
+            margin: 10px auto;
+            width: 80%;
+            font-size: 20px;
+            border: 1px solid black;
+        }
+        table thead {
+            font-weight: bold;
+        }
+        table button{
+            width: 60px;  
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="#" method="post" id="cinema_form">
+            <input type="text" name="cin_name" id="cin_name" placeholder="Enter Name"><br>
+            <input type="text" name="cin_location" id="cin_location" placeholder="Enter Locataion"><br>
+            <input type="text" name="facilities" id="facilities" placeholder="Enter Facilities"><br>
+            <input type="submit">
+        </form>
+        <br>
+        <table>
+            <thead>
+                <tr>
+                    <td>Cinema Name</td>
+                    <td>Locataion</td>
+                    <td>Available Facilities</td>
+                    <td>Update / Delete</td>
+                </tr>
+            </thead>
+            <tbody id="table_data">
+    
+            </tbody>
+        </table>
+    </div>
+    
+    
+
+
+    <script src="./js/add_cinema.js"></script>
+</body>
+
+</html>

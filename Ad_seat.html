@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ad Seat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100%;
+            height: auto;
+            min-height: 100vh;
+            display: flex;
+            justify-content: space-around;
+            background: linear-gradient(90deg, rgba(71, 26, 26, 1) 0%, rgba(148, 135, 45, 1) 21%);
+        }
+        .left {
+            border-right: 3px solid black;
+            height: 100%;
+            width: 150px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding-top: 40px;
+        }
+        .left h2 {
+            margin-top: 10px;
+            text-align: center;
+            border-bottom: 3px solid #000;
+            font-size: 30px;
+        }
+        .left p {
+            font-size: 22px;
+            text-align: center;
+        }
+        .left p a {
+            text-decoration: none;
+            color: #fff;
+        }
+        .right {
+            margin-left: 150px;
+            width: 90%;
+        }
+        .right h1 {
+            text-align: center;
+            margin-top: 0;
+        }
+        .container-div {
+            height: 100%;
+            /* background: linear-gradient(to top left, #3ed8ff, #a8f5ff); */
+        }
+        .container-div h1 {
+            margin-top: 10px;
+        }
+        input {
+            width: 7%;
+            padding: 4px;
+            margin: 3px !important;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        input[type="submit"] {
+            background-color: #3498db;
+            border: none;
+            color: white;
+            cursor: pointer;
+            width: 130px;
+        }
+        #seat_form {
+            margin-left: 10px;
+        }
+        #seat_form select{
+            margin-right: 50px;
+            min-width: 120px;
+        }
+        #seat_form label{
+            font-weight: 500;
+    font-size: 20px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2977aa;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2977aa;
+        }
+
+        table {
+            margin-left: 10px;
+            width: 98.5%;
+            font-size: 18px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        table,
+        tr,
+        td {
+            border: 1px solid;
+            height: 40px;
+        }
+
+        table thead {
+            font-weight: bold;
+        }
+
+        table button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .action_btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            border: none;
+        }
+
+        .poster img {
+            width: 100px;
+            height: 100px;
+        }
+
+        #table_data tr:hover {
+            background: linear-gradient(90deg, rgba(212, 191, 26, 1) 0%, rgba(143, 129, 45, 1) 21%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h2>Admin</h2>
+            <br>
+            <p><a href="./Ad_cinema.html">Add Cinema</a></p>
+            <p><a href="./Ad_movie.html">Add Movie</a></p>
+            <p><a href="#">Add Seat</a></p>
+        </div>
+        <div class="right">
+            <div class="container-div">
+                <h1>Seat</h1>
+                <form action="#" method="post" id="seat_form">
+                    <label for="seat">Choose a Cinema:</label>
+                    <select id="seat" >
+                        <option value="0">--Select--</option>
+                    </select>
+                    <!-- <br> -->
+
+                    <label for="movie">Choose a Movie:</label>
+                    <select id="movie">
+                        <option value="0">--Select--</option>
+                    </select>
+
+                    <!-- <br> -->
+
+                    <label for="time">Choose a Time:</label>
+                    <select id="time">
+                        <option value="0">--Select--</option>
+                    </select>
+                    <br><br>
+                    <label for="total_Seat">Seat :</label>
+                    <input type="text" name="total_Seat" id="total_Seat" placeholder="Enter Seat">
+                    <br>
+                    <label for="price">Price :</label>
+                    <input type="text" name="price" id="price" placeholder="Enter Price">
+                    <br>
+
+                    <input type="submit">
+                </form>
+                <br>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>C_ID / Cinema Name</td>
+                            <td>M_ID / Movie Name</td>
+                            <td>Time</td>
+                            <td>Seat</td>
+                            <td>Price</td>
+                            <td>Update / Delete</td>
+                        </tr>
+                    </thead>
+                    <tbody id="table_data">
+            
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/Ad_seat.js"></script>
+</body>
+</html>

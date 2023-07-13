@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: space-between;
+            background: linear-gradient(90deg, rgba(42,40,40,1) 0%, rgba(148,135,45,1) 21%);        }
+        .left {
+            width: 10%;
+            border-right: 3px solid black;
+        }
+        .left h2{
+            margin-top: 10px;
+            text-align: center;
+            border-bottom: 3px solid #000;
+            font-size: 30px;
+        }
+        .left p{
+            font-size: 22px;
+            text-align: center;
+        }
+        .left p a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+
+        }
+        .right {
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .right h1{
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h2>Admin</h2>
+            <br>
+            <p><a href="./Ad_cinema.html">Add Cinema</a></p>
+            <p><a href="./Ad_movie.html">Add Movie</a></p>
+            <p><a href="./Ad_seat.html">Add Seat</a></p>
+        </div>
+        <div class="right">
+            <h1>Welcome</h1>
+        </div>
+    </div>
+</body>
+</html>

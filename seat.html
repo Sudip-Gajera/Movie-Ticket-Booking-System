@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat</title>
+    <link rel="stylesheet" href="./css/style-home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section {
+            height: 100vh;
+        }
+
+        #cinema_seat {
+            width: 1200px;
+            margin: 50px auto;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+
+
+        #cinema_seat button {
+            background-color: transparent;
+            border: 1px solid white;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 4px;
+            width: 40px;
+        }
+
+        #cinema_seat button:hover {
+            background-color: rgb(255, 255, 255);
+            color: #000;
+        }
+        #price-data{
+            width: 1200px;
+            /* height: 100px; */
+            /* border: 1px solid white; */
+            /* background-color: #fff; */
+            position: absolute;
+            top: 400px;
+            margin: auto;
+            left: 150px;
+            text-align: center;
+        }
+        #price-data p {
+            color: #ffe100;
+            text-align: center;
+            margin-bottom: 6px;
+            font-size: 18px;
+        }
+        .popup{
+            color: rgb(25, 202, 25);
+            margin-top: 10px;
+            font-size: 30px;
+            visibility: hidden;
+        }
+        .open_popup{
+            visibility: visible;
+        }
+        .price{
+            width: 185px;
+            font-size: 20px;
+            color: #ffe100;
+            border: 1px solid #fff;
+            background-color: transparent;
+            height: 40px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .price:hover{
+            background-color: #6dd569;
+            color: #000;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <section>
+
+        <nav>
+
+            <div class="logo">
+                <h1>book my<span>show</span></h1>
+            </div>
+
+            <div class="right">
+
+                <ul>
+
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#Movies">Movies</a></li>
+                    <li><a href="./signup.html">Signup</a></li>
+                    <li><a href="./login.html">Login</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+        
+    </div>
+    
+    <div id="cinema_seat">
+        
+    </div>
+
+    <div id="price-data">
+        <p>Total Seat: <span id="seat">0</span></p>
+        <button class="price" onclick="pay()">Pay Rs: <span id="price">0</span></button>
+        <h2 id="popup" class="popup">Your Tickets are Booking Sucessfully</h2>
+    </div>
+
+
+    </section>
+
+
+
+
+
+
+    <p class="end">Design By<span><i class="fa-solid fa-face-grin"></i>Code With Sudip</span></p>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./js/seat.js"></script>
+
+</body>
+
+</html>

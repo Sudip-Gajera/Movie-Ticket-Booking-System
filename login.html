@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/login_style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <header class="login-header">
+                <h1>Login</h1>
+            </header>
+            <main class="login-body">
+                <form action="#" id="login_form" method="post">
+                    <p>
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" placeholder="sudipgajera1997@gmail.com" required>
+                        <div id="email_error">  </div>
+                    </p>
+                    <p>
+                        <label for="password">Your Password</label>
+                        <input type="password" id="password" placeholder="At Least 8 characters" required>
+                    </p>
+                    <p>
+                        <input type="submit" id="submit">
+                    </p>
+                </form>
+            </main>
+            <footer class="login-footer">
+                <p>You have no Account? <a href="./signup.html">Signup</a></p>
+            </footer>
+        </div>
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/signup.js"></script>
+    <!-- <script>
+        $(document).ready(function (){
+            $("#submit").click(function (){
+                var f_name = $("#fullname").val();
+
+                if (f_name == ""){
+                    $("#f_name_error").html("*The FullName must be Alphabate.");
+                    $("#f_name_error").css("color","red");
+                    return false;
+                }
+
+                var email = $("#email").val();
+
+                if (email == ""){
+                    $("#email_error").html("*Enter valid email.");
+                    $("#email_error").css("color","red");
+                    return false;
+                }
+            });
+        });
+    </script> -->
+</body>
+</html>
