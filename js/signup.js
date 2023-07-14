@@ -25,7 +25,8 @@ const handleRegister = () => {
         localStorage.setItem("user_Data", JSON.stringify(userData));
     }
 
-    location.replace("http://127.0.0.1:5500/Movie/login.html");
+    location.replace("http://127.0.0.1:5500/login.html");
+    // location.replace("http://127.0.0.1:5500/Movie/login.html");
     
     
     event.preventDefault();

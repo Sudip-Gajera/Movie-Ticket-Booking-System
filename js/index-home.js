@@ -35,13 +35,15 @@ localStorage.setItem("filterMovieData", JSON.stringify(filterMovieData));
 const handleMovie = (i) => {
   sessionStorage.setItem("movie", JSON.stringify(i));
 
-  window.location = "http://127.0.0.1:5500/Movie/movieDetail.html";
+  window.location = "http://127.0.0.1:5500/movieDetail.html";
+  // window.location = "http://127.0.0.1:5500/Movie/movieDetail.html";
 }
 
 const handleCinema = (i) => {
   sessionStorage.setItem("cinema", JSON.stringify(i));
 
-  window.location = "http://127.0.0.1:5500/Movie/cinemaDetail.html";
+  window.location = "http://127.0.0.1:5500/cinemaDetail.html";
+  // window.location = "http://127.0.0.1:5500/Movie/cinemaDetail.html";
 }
 
 

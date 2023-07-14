@@ -29,5 +29,6 @@ window.onload = movieDetails();
 const handleMovieData = (name) => {
   sessionStorage.setItem("movie_name", JSON.stringify(name));
 
-  window.location = "http://127.0.0.1:5500/Movie/CinemaList.html";
+  window.location = "(http://127.0.0.1:5500/CinemaList.html)";
+  // window.location = "http://127.0.0.1:5500/Movie/CinemaList.html";
 }

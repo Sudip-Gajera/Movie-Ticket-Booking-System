@@ -63,6 +63,7 @@ const handleTime = (i, cid) => {
     sessionStorage.setItem("movie_time", JSON.stringify(i));
     sessionStorage.setItem("movie_cid", JSON.stringify(cid));
 
-    window.location = "http://127.0.0.1:5500/Movie/seat.html";
+    window.location = "http://127.0.0.1:5500/seat.html";
+    // window.location = "http://127.0.0.1:5500/Movie/seat.html";
 }
 
