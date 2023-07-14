@@ -17,6 +17,7 @@ const handleLogin = () => {
 
     if (loginEmail === admin_Email && loginPass === admin_Pass) {
         location.replace("http://127.0.0.1:5500/Movie/admin_panal.html");
+        // location.replace("http://127.0.0.1:5500/admin_panal.html");
     } else if (update) {
         alert("Login successful");
         location.replace("http://127.0.0.1:5500/Movie/index-home.html#");
